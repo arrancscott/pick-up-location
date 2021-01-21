@@ -25,6 +25,12 @@ $ npm install
 Now, `cd` back into the root dir and run:
 
 ```bash
+$ npm install -g foreman
+```
+
+Finally, run:
+
+```bash
 $ nf start
 ```
 
