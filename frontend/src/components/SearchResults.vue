@@ -79,6 +79,7 @@
 
   .results-container {
     display: flex;
+    display: -ms-flexbox;
     flex-flow: row;
   }
 
