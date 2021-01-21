@@ -48,7 +48,7 @@ $ npm test
 
 ## Codestyle
 
-standard JS is used for codestyle. To check, run the following in the root dir:
+standard JS is used for codestyle. To check, run the following in the root dir after running `npm install standard -g`:
 
 ```bash
 $ standard
