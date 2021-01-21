@@ -1,6 +1,10 @@
 # WebStorm project files
 .idea
 
+# Node modules
+node_modules
+frontend/node_modules
+
 # Local env files
 frontend/.env.local
 frontend/.env.*.local
