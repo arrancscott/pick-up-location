@@ -1,7 +1,7 @@
 <template>
   <div id="results">
     <ul>
-      <li v-for="result in this.results" :key="result.index" :class="result.placeType && 'result-li'">
+      <li v-for="result in this.results" :key="result.index" :class="result.placeType && 'result-li'" @click="onClick(result)">
         <div class="results-container">
           <div v-if="result.placeType" class="content result-type">
             <span :style="`background-color: ${objForPlaceType(result.placeType).bgColor}`">{{ objForPlaceType(result.placeType).name }}</span>
@@ -45,6 +45,10 @@
             break
         }
         return obj
+      },
+
+      onClick: function(result) {
+        this.$emit('liClicked', result)
       }
     }
   }
